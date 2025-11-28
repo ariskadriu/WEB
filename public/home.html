@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Home - Product Orders</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Product Orders</h1>
+      <nav>
+        <a href="add-stock.html">Add Stock</a>
+        <a href="view-stock.html">View Stock</a>
+        <a href="track-orders.html">Track Orders</a>
+        <a href="add-order.html">Add Order</a>
+        <a href="login.html" id="logout" style="margin-left:auto;background:var(--error);">Logout</a>
+      </nav>
+      <section id="page-add-stock" class="app-page" style="display:none"></section>
+      <section id="page-view-stock" class="app-page" style="display:none"></section>
+      <section id="page-track-orders" class="app-page" style="display:none"></section>
+      <section id="page-welcome" class="app-page" style="display:block">
+        <h2>Welcome!</h2>
+        <div id="user-info"></div>
+      </section>
+    </div>
+    <script src="home.js"></script>
+  </body>
+</html>

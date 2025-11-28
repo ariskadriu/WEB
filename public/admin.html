@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Admin - Product Orders</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Admin page expects the admin password to be present in localStorage under `adminPass`. -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔧 Admin Dashboard</h1>\n      <div style="text-align:center;margin-bottom:24px"><a href="/" style="color:#fff;text-decoration:none;background:rgba(255,255,255,0.2);padding:8px 16px;border-radius:6px;display:inline-block">← Back to Orders</a></div>
+
+      <section class="card">
+        <h2>Admin Access</h2>
+        <div style="margin-bottom:8px;color:var(--text-secondary)">This admin panel is protected. Use the main page's "Go to Admin Panel" button to enter the admin password. If you already used that, the panel will detect your session automatically.</div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <a href="/" class="btn-admin-link">← Back to Main Page</a>
+        </div>
+        <div id="admin-status" style="margin-top:8px;color:#333">Not logged in</div>
+      </section>
+
+      <section class="card">
+        <h2>Register Employee</h2>
+        <form id="admin-employee-form">
+          <input type="text" id="a-username" placeholder="Username" required />
+          <input type="text" id="a-name" placeholder="Full name (optional)" />
+          <input type="password" id="a-password" placeholder="Password for employee" required />
+          <select id="a-role">
+            <option value="employee">Employee</option>
+            <option value="driver">Driver</option>
+            <option value="manager">Manager</option>
+          </select>
+          <button type="submit">Create Employee</button>
+        </form>
+
+        <h3 style="margin-top:12px">Update existing employee</h3>
+        <div style="display:flex;gap:8px;align-items:center">
+          <select id="a-select-existing"></select>
+          <input type="password" id="a-password-update" placeholder="New password" />
+          <select id="a-role-update">
+            <option value="employee">Employee</option>
+            <option value="driver">Driver</option>
+            <option value="manager">Manager</option>
+          </select>
+          <button id="a-update-btn">Update</button>
+        </div>
+        <div id="admin-employee-msg" style="margin-top:8px;color:#c00"></div>
+        
+        <h3 style="margin-top:12px">Quick: Set password for employee without one</h3>
+        <div style="display:flex;gap:8px;align-items:center">
+          <input type="password" id="a-quick-password" placeholder="Enter password" />
+          <button id="a-quick-set-btn">Set Password for Selected</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Reports</h2>
+        <div style="display:flex;gap:8px;align-items:center">
+          <label><input type="radio" name="period" value="day" /> Day</label>
+          <label><input type="radio" name="period" value="week" /> Week</label>
+          <label><input type="radio" name="period" value="month" checked /> Month</label>
+          <label><input type="radio" name="period" value="all" /> All</label>
+        </div>
+        <div id="report-controls" style="margin-top:8px;display:flex;gap:8px;align-items:center">
+          <input type="date" id="report-day" style="display:none" />
+          <input type="week" id="report-week" style="display:none" />
+          <input type="month" id="report-month" />
+          <button id="btn-report">Get Report</button>
+        </div>
+        <div id="report-output" style="margin-top:12px"></div>
+      </section>
+    </div>
+    <script src="admin.js"></script>
+  </body>
+ </html>

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1764287178652",
+    "username": "Aris",
+    "name": "Aris Kadriu",
+    "role": "driver",
+    "hashedPassword": "$2a$08$Vez7y2LxifFdzWkk0/Nz3.EvM8terZUAZXRjA4778LnK3/F0kxDQG"
+  },
+  {
+    "id": "1764289566048",
+    "username": "Taulant",
+    "name": "Taulant Abazi",
+    "role": "driver",
+    "hashedPassword": "$2a$08$eD6.izuU/k063NqkoVK07OroMNxRSgLrdTvLUXkHC8zv0WrHU.iJW"
+  }
+]

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Add Order</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add Order</h1>
+      <nav>
+        <a href="add-stock.html">Add Stock</a>
+        <a href="view-stock.html">View Stock</a>
+        <a href="track-orders.html">Track Orders</a>
+        <a href="add-order.html">Add Order</a>
+        <a href="login.html" id="logout" style="margin-left:auto;background:var(--error);">Logout</a>
+      </nav>
+      <section class="card">
+        <form id="order-form">
+          <input id="o-product-input" placeholder="Product name" required />
+          <input type="number" id="o-qty" placeholder="Quantity" min="1" required />
+          <input type="text" id="o-destination" placeholder="Destination (address)" required />
+          <div class="total">Total: $<span id="o-total">0.00</span></div>
+          <button type="submit">Place Order</button>
+        </form>
+        <div id="order-msg" style="margin-top:8px;color:#c00"></div>
+      </section>
+    </div>
+    <script src="add-order.js"></script>
+  </body>
+</html>

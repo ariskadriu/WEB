@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Track Orders</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Track Orders</h1>
+      <nav>
+        <a href="add-stock.html">Add Stock</a>
+        <a href="view-stock.html">View Stock</a>
+        <a href="track-orders.html">Track Orders</a>
+        <a href="add-order.html">Add Order</a>
+        <a href="login.html" id="logout">Logout</a>
+      </nav>
+      <section class="card">
+        <table id="orders-table">
+          <thead>
+            <tr><th>When</th><th>Product</th><th>Qty</th><th>Unit</th><th>Total</th><th>Employee</th><th>Destination</th><th>Status</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </div>
+    <script src="track-orders.js"></script>
+  </body>
+</html>

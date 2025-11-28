@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Add Stock</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add Stock</h1>
+      <nav>
+        <a href="add-stock.html">Add Stock</a>
+        <a href="view-stock.html">View Stock</a>
+        <a href="track-orders.html">Track Orders</a>
+        <a href="add-order.html">Add Order</a>
+        <a href="login.html" id="logout">Logout</a>
+      </nav>
+      <section class="card">
+        <form id="product-form">
+          <input type="text" id="p-name" placeholder="Product name" required />
+          <input type="number" id="p-price" placeholder="Price" step="0.01" required />
+          <input type="number" id="p-qty" placeholder="Quantity" required />
+          <label><input type="checkbox" id="p-adjust" checked /> Adjust if exists</label>
+          <button type="submit">Add / Adjust Product</button>
+        </form>
+        <div id="add-stock-msg" style="margin-top:8px;color:#c00"></div>
+      </section>
+    </div>
+    <script src="add-stock.js"></script>
+  </body>
+</html>

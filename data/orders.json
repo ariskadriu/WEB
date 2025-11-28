@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1764289496020",
+    "productId": "1764289485430",
+    "productName": "Karrike",
+    "unitPrice": 10,
+    "quantity": 4,
+    "total": 40,
+    "employeeId": "1764287178652",
+    "employeeName": "Aris",
+    "destination": "Muharrem Fejza",
+    "status": "shipped",
+    "statusUpdatedBy": "1764289566048",
+    "statusUpdatedAt": "2025-11-28T00:30:25.595Z",
+    "createdAt": "2025-11-28T00:24:56.020Z"
+  },
+  {
+    "id": "1764289510269",
+    "productId": "1764289485430",
+    "productName": "Karrike",
+    "unitPrice": 10,
+    "quantity": 3,
+    "total": 30,
+    "employeeId": "1764287178652",
+    "employeeName": "Aris",
+    "destination": "Muharrem Fejza",
+    "status": "shipped",
+    "statusUpdatedBy": "1764289566048",
+    "statusUpdatedAt": "2025-11-28T00:30:13.466Z",
+    "createdAt": "2025-11-28T00:25:10.269Z"
+  },
+  {
+    "id": "1764289522062",
+    "productId": "1764289485430",
+    "productName": "Karrike",
+    "unitPrice": 10,
+    "quantity": 5,
+    "total": 50,
+    "employeeId": "1764287178652",
+    "employeeName": "Aris",
+    "destination": "Muharrem Fejza",
+    "status": "returned",
+    "statusUpdatedBy": "1764289566048",
+    "statusUpdatedAt": "2025-11-28T00:30:11.023Z",
+    "createdAt": "2025-11-28T00:25:22.062Z"
+  }
+]
